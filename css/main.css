@@ -237,18 +237,6 @@ body {
   flex-wrap: wrap;
 }
 
-.menu_list_recommended {
-  /* トップページのメニューリストには別途paddingの設定（マルチクラス） */
-  padding-bottom: 50px;
-}
-.pancake_menu .menu_list {
-  flex-direction: column;
-}
-
-.pancake_menu .menu_list .menu_item {
-  width: auto;
-}
-
 .menu_item {
   width: 49%;
   display: flex;
@@ -292,4 +280,16 @@ body {
 }
 .btn-disabled {
   background: rgba(0, 0, 0, 0.3);
+}
+.menu_list_recommended {
+  /* トップページのメニューリストには別途paddingの設定（マルチクラス） */
+  padding-bottom: 50px;
+}
+.pancake_menu .menu_list {
+  flex-direction: column; /*El menú toma forma de columna ya no tipo flex */
+}
+
+.pancake_menu .menu_list .menu_item {
+  /*La anchura se ajusta a la pantalla*/
+  width: auto;
 }
